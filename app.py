@@ -17,7 +17,7 @@ st.set_page_config(
 # 모델 로딩 (앱 실행 중 재사용)
 @st.cache_resource
 def load_ai_model():
-    return load_model("model/keras_Model.h5", compile=False)
+    return load_model("model/keras_model.h5", compile=False)
 
 
 # 클래스 정보 로딩
