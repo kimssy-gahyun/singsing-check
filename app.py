@@ -67,6 +67,16 @@ def predict(image, model, labels):
 st.markdown(
     """
     <style>
+    /* Streamlit 기본 헤더 숨김 */
+    [data-testid="stHeader"] {
+        display: none !important;
+    }
+
+    /* 기본 상단 장식 제거 */
+    [data-testid="stDecoration"] {
+        display: none !important;
+    }
+
     /* 기본 폰트 */
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
