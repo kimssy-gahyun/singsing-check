@@ -428,6 +428,15 @@ st.markdown(
     @media (max-width: 480px) {
         .st-key-brand_home { margin-bottom: 1.4rem; }
         .st-key-brand_home .stButton > button p { font-size: 1.1rem; }
+    }    /* 공통 하단 저작권 문구 */
+    .app-footer {
+        margin: 2rem 0 0;
+        padding: 1rem 0 0.25rem;
+        border-top: 1px solid #E3E6E3;
+        color: #8A938E;
+        font-size: 0.72rem;
+        line-height: 1.4;
+        text-align: center;
     }    </style>
     """,
     unsafe_allow_html=True # 위에서 작성한 CSS를 화면에 적용
@@ -653,3 +662,8 @@ else:
         st.session_state.pop("analysis_image_bytes", None)
         st.session_state.screen = "input"
         st.rerun()
+# 모든 화면에서 공통으로 표시하는 하단 저작권 문구
+st.markdown(
+    '<footer class="app-footer">© 2026 SINGSING CHECK · Developed by Gahyun Kim</footer>',
+    unsafe_allow_html=True
+)
